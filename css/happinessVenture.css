@@ -1,0 +1,32 @@
+body{
+    padding-top: 100px;
+}
+.nav-item{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 20px;
+    
+}
+.nav-item:hover a{
+    color: red;
+
+}
+.nav-link.active {
+    color: red !important;
+}
+.jjj{
+    width: 150px;
+    height: 70px;
+   
+    
+    
+}
+
+.bg-light {
+    color: rgb(114, 110, 110) !important;
+}
+.my-link:hover {
+    color: red !important;
+
+}

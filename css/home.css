@@ -1,0 +1,359 @@
+
+.nav-item{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 20px;
+    
+}
+.nav-item:hover a{
+    color: red;
+
+}
+.nav-link.active {
+    color: red !important;
+}
+.nav-link i {
+    color: red !important;
+}
+.carousel-indicators {
+    bottom: -40px;
+    list-style: disc;
+    
+}
+
+.carousel-indicators li {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+main{
+    margin-top: 100px;
+}
+.carousel-item img{
+    margin-bottom: 50px;
+}
+.ice-cream-section{
+    background: #f8f7f1 url('../images/product-slider_bg_with_shadow.png') center top / 100% auto no-repeat;
+    color: #252525;
+    margin-top: 50px;
+    min-height: 480px;
+    overflow: hidden;
+    padding-top: 52px;
+}
+.section-heading h2{
+    color: #5a5a5a;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+}
+.section-heading span{
+    background: #ed1c24;
+    display: block;
+    height: 3px;
+    margin: 17px auto 35px;
+    width: 200px;
+}
+.product-categories{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+}
+.product-category{
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: #5b5b5b;
+    display: flex;
+    flex: 0 0 150px;
+    flex-direction: column;
+    font-size: 23px;
+    font-weight: 700;
+    gap: 13px;
+    padding: 0;
+    position: relative;
+}
+.product-category img{
+    height: 116px;
+    object-fit: contain;
+    width: 116px;
+}
+.product-category img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.product-category.is-active{color:#ed1c24}
+.product-category.is-active::after{
+    background:#fff;
+    bottom:-28px;
+    clip-path:polygon(50% 0,100% 100%,0 100%);
+    content:'';
+    height:16px;
+    left:50%;
+    position:absolute;
+    transform:translateX(-50%);
+    width:30px;
+}
+.category-divider{
+    border-top:4px dotted #fff;
+    flex:0 0 35px;
+    margin:-40px 5px 0;
+}
+.product-panel{
+    margin-bottom: 0;
+}
+.product-card{
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.product-card:hover{
+    transform: translateY(-6px);
+}
+.product-image-wrap{
+    background: #fffdf8;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+.product-image-wrap img{
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease;
+    width: 100%;
+}
+.why-polar{
+    background:#fff;
+    color:#666;
+}
+.why-title{
+    font-size:28px;
+}
+.why-line{
+    height:2px;
+    width:190px;
+}
+.why-icon{
+    align-items:center;
+    display:flex;
+    height:42px;
+    justify-content:center;
+    width:42px;
+}
+.why-icon i{
+    font-size:19px;
+}
+.why-polar h3{
+    color:#555;font-size:11px;
+}
+.why-polar p{
+    font-size:12px;
+    line-height:1.6;
+    margin:0;
+}
+.why-product{
+    max-height:330px;
+    object-fit:contain;
+}
+.site-footer{
+    color:#555;
+    font-size:13px
+}
+.footer-hero{
+    background:#ffb300 url('../images/testimonial_bottom-1536x148.png.webp') center bottom/cover no-repeat;min-height:150px
+}
+.footer-showcase{
+    background:#fff
+}
+.footer-mascot{
+    height:150px;
+    object-fit:contain;
+}
+.footer-links{
+    border-top:1px dotted #ddd;
+    background:#fff;
+}
+.footer-links h3{
+    color:#444;
+}
+.footer-links a{
+    color:#1f1d1d;
+    display:block;
+    margin-bottom:8px;
+    text-decoration:none;
+}
+.footer-social{
+    align-items:center;
+    background:#f5f3ed;
+    border-radius:50%;
+    color:#555!important;
+    display:inline-flex;
+    height:28px;justify-content:center;
+    margin:0!important;
+    width:28px;
+}
+.footer-social:hover{
+    background:#ed1c24;
+    color:#fff!important;
+}
+.footer-bottom{
+    background:#f8f7f1;
+    border-top:1px solid #eee;
+    color:#888;
+}
+
+.why-polar .d-flex:hover p {
+    color: #dc3545; 
+    cursor: pointer;
+   
+}
+.jjj img{
+    margin-bottom: 10px;
+}
+.site-footer{
+    margin-top: 50px;
+}
+/* Phone Responsive */
+@media (max-width: 576px) {
+
+    /* Navbar */
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        gap: 0 !important;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    /* Main */
+    main {
+        margin-top: 70px;
+    }
+
+    /* Carousel */
+    .carousel-item img {
+        margin-bottom: 20px;
+    }
+
+    .carousel-item h2 {
+        font-size: 22px;
+    }
+
+    .carousel-item p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .carousel-item p br {
+        display: none;
+    }
+
+    .carousel-item .btn {
+        padding: 8px 25px !important;
+    }
+
+    /* Ice Cream Category */
+    .product-categories {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 0 15px;
+    }
+
+    .product-category {
+        flex: 0 0 110px;
+        font-size: 16px;
+    }
+
+    .product-category img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .category-divider {
+        flex: 0 0 20px;
+    }
+
+    /* Section heading */
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading span {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    /* Product */
+    .product-image-wrap {
+        height: 180px;
+    }
+
+    .card-body {
+        padding: 20px !important;
+    }
+
+    /* Why Polar */
+    .why-title {
+        font-size: 24px;
+    }
+
+    .why-polar h3 {
+        font-size: 18px;
+    }
+
+    .why-polar p {
+        font-size: 14px !important;
+    }
+
+    .why-polar p br {
+        display: none;
+    }
+
+    .why-product {
+        max-height: 250px;
+    }
+
+    /* Newness section */
+    .container > .row > .col-4,
+    .container > .row > .col-8 {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-mascot {
+        height: 120px;
+    }
+
+    .footer-showcase .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links .row {
+        text-align: center;
+    }
+
+    .footer-social {
+        margin: 0 2px !important;
+    }
+}
+
+
+
+
+
+
